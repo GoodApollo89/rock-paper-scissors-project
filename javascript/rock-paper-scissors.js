@@ -52,5 +52,11 @@ function game(){
         computerSelection = getComputerChoice();
         playRound(playerSelection, computerSelection);
     }
-    console.log('Your score is ' + playerScore + ' while the computer\'s score' + computerScore);
+    if(playerScore > computerScore){
+    alert('Your score is ' + playerScore + ' while the computer\'s score is ' + computerScore + '. You Win! :)');
+    }else if(playerScore === computerScore){
+    alert('Your score is ' + playerScore + ' while the computer\'s score is ' + computerScore + '. It\'s a draw! :/');
+    }else{
+    alert('Your score is ' + playerScore + ' while the computer\'s score is ' + computerScore + '. You Lose! :(');
+    }
 }
