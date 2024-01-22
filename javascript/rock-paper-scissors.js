@@ -1,5 +1,5 @@
 // this function randomly produces 'Rock', 'Paper' or 'Scissors' based upon
-// if the integer produced is 1, 2 or 3. 
+// if the integer produced is 1, 2 or 3
 function getComputerChoice(){
     if(Math.floor(Math.random() * 3) + 1 === 1){
          return 'Rock';
@@ -9,7 +9,6 @@ function getComputerChoice(){
          return 'Scissors';
     }
     }
-
 
     let playerScore;
     let computerScore;    
@@ -43,6 +42,7 @@ function getComputerChoice(){
         }
     }
 
+// This function plays 5 rounds of playRound() function, with the scores tallied and returned at the end
 function game(){
     alert('This game of Rock, Paper, Scissors is best of 5 rounds.');
     playerScore = 0;
@@ -55,7 +55,7 @@ function game(){
     if(playerScore > computerScore){
     alert('Your score is ' + playerScore + ' while the computer\'s score is ' + computerScore + '. You Win! :)');
     }else if(playerScore === computerScore){
-    alert('Your score is ' + playerScore + ' while the computer\'s score is ' + computerScore + '. It\'s a draw! :/');
+    alert('Your score is ' + playerScore + ' while the computer\'s score is ' + computerScore + '. It\'s a Draw! :/');
     }else{
     alert('Your score is ' + playerScore + ' while the computer\'s score is ' + computerScore + '. You Lose! :(');
     }
